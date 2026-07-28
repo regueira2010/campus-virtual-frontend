@@ -1,7 +1,7 @@
 export const CourseStatus = {
-  SCHEDULED: "SCHEDULED",
-  IN_PROGRESS: "IN_PROGRESS",
-  FINISHED: "FINISHED"
+  AVAILABLE: "Disponible",
+  IN_PROGRESS: "Cursando",
+  ARCHIVED: "Archivado"
 } as const;
 
 export type CourseStatus = typeof CourseStatus[keyof typeof CourseStatus];

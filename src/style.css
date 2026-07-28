@@ -23,3 +23,41 @@ h1 {
 p {
   color: #cccccc;
 }
+
+.courses-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.course-card {
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #1a1a1a;
+  text-align: left;
+}
+
+.status {
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.status--available {
+  background-color: #0284c7;
+  color: #ffffff;
+}
+
+.status--in-progress {
+  background-color: #eab308;
+  color: #000000;
+}
+
+.status--archived {
+  background-color: #6b7280;
+  color: #ffffff;
+}

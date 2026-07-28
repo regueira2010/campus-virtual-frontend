@@ -7,7 +7,7 @@ export const coursesList: Course[] = [
     professor: "Prof. Albert Einstein",
     startDate: new Date("2026-08-01"),
     schedule: "19:00",
-    status: CourseStatus.SCHEDULED,
+    status: CourseStatus.AVAILABLE,
   },
   {
     id: "2",
@@ -23,6 +23,6 @@ export const coursesList: Course[] = [
     professor: "Prof. Nikola Tesla",
     startDate: new Date("2026-10-01"),
     schedule: "20:00",
-    status: CourseStatus.FINISHED,
+    status: CourseStatus.ARCHIVED,
   },
 ];
