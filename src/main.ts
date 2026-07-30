@@ -1,6 +1,7 @@
 import "./style.css";
 import { getCourses } from "./services/course.service";
 import { generateCourseCardHtml } from "./components/CourseCard";
+import { generateCourseCounterHtml } from "./components/CourseCounter";
 
 const appContainer = document.getElementById("app");
 
@@ -23,6 +24,7 @@ async function renderApp() {
         <ul class="courses-list">
           ${courses.map((course) => generateCourseCardHtml(course)).join("")}
         </ul>
+        ${generateCourseCounterHtml(courses.length)}
       </main>
     `;
   } catch (error) {

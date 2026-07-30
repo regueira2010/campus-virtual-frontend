@@ -61,3 +61,16 @@ p {
   background-color: #6b7280;
   color: #ffffff;
 }
+
+.course-counter {
+  background-color: #262626;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  color: #e5e5e5;
+}
+
+.course-counter strong {
+  color: #38bdf8;
+}
