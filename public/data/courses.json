@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "title": "Fundamentos de JavaScript con TypeScript",
+    "professor": "Prof. Albert Einstein",
+    "startDate": "2026-08-01",
+    "schedule": "19:00",
+    "status": "Disponible"
+  },
+  {
+    "id": "2",
+    "title": "Fundamentos de React con TypeScript",
+    "professor": "Prof. Tomás Alva Edison",
+    "startDate": "2026-09-15",
+    "schedule": "21:00",
+    "status": "Cursando"
+  },
+  {
+    "id": "3",
+    "title": "Fundamentos de Node.js con TypeScript",
+    "professor": "Prof. Nikola Tesla",
+    "startDate": "2026-10-01",
+    "schedule": "20:00",
+    "status": "Archivado"
+  }
+]
