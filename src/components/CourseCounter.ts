@@ -1,5 +1,5 @@
 export function generateCourseCounterHtml(count: number): string {
-  const label = count === 1 ? "curso disponible" : "cursos disponibles";
+  const label = count === 1 ? "curso" : "cursos";
 
   return `
     <div class="course-counter">

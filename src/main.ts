@@ -21,10 +21,10 @@ async function renderApp() {
     appContainer.innerHTML = `
       <main class="container">
         <h1>Campus Virtual - Cursos</h1>
+         r${generateCourseCounterHtml(courses.length)}
         <ul class="courses-list">
           ${courses.map((course) => generateCourseCardHtml(course)).join("")}
         </ul>
-        ${generateCourseCounterHtml(courses.length)}
       </main>
     `;
   } catch (error) {
@@ -34,7 +34,7 @@ async function renderApp() {
       <main class="container">
         <h1>Campus Virtual - Cursos</h1>
         <div class="error-banner">
-          ⚠️ No se puede obtener la data. Intente nuevamente más tarde.
+          No se puede obtener la data. Intente nuevamente más tarde.
         </div>
       </main>
     `;
