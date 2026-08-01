@@ -1,10 +1,8 @@
-export const CourseStatus = {
-  AVAILABLE: "Disponible",
-  IN_PROGRESS: "Cursando",
-  ARCHIVED: "Archivado"
-} as const;
-
-export type CourseStatus = typeof CourseStatus[keyof typeof CourseStatus];
+export enum CourseStatus {
+  AVAILABLE = "Disponible",
+  IN_PROGRESS = "Cursando",
+  ARCHIVED = "Archivado"
+}
 
 export interface Course {
   id: string;

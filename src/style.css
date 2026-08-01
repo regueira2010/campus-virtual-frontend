@@ -116,9 +116,36 @@ p {
   display: none;
 }
 
-.feedback-message.success {
+.feedback-message.success,
+.feedback-message.error,
+.feedback-message.loading {
   display: block;
+}
+
+.feedback-message.success {
   background-color: #14532d;
   color: #86efac;
   border: 1px solid #22c55e;
+}
+
+.feedback-message.error {
+  background-color: #7f1d1d;
+  color: #fca5a5;
+  border: 1px solid #ef4444;
+}
+
+.feedback-message.loading {
+  background-color: #1e293b;
+  color: #94a3b8;
+  border: 1px solid #475569;
+}
+
+.error-banner {
+  background-color: #7f1d1d;
+  color: #fca5a5;
+  border: 1px solid #ef4444;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  text-align: center;
 }

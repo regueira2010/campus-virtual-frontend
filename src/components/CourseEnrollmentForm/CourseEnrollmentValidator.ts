@@ -12,7 +12,7 @@ export interface CourseEnrollmentErrors {
 
 export class CourseEnrollmentValidator {
   private static NAME_REGEX = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/;
-  private static EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+  private static EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
   /** Formatea en tiempo real: elimina espacios iniciales y espacios dobles */
   static formatFullName(name: string): string {
