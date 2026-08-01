@@ -22,5 +22,13 @@
     "startDate": "2026-10-01",
     "schedule": "20:00",
     "status": "Archivado"
+  },
+  {
+    "id": "4",
+    "title": "Fundamentos de JavaScript con TypeScript Intensivo",
+    "professor": "Prof. Albert Einstein",
+    "startDate": "2026-10-01",
+    "schedule": "20:00",
+    "status": "Disponible"
   }
 ]

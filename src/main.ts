@@ -2,6 +2,7 @@ import "./style.css";
 import { getCourses } from "./services/course.service";
 import { generateCourseCardHtml } from "./components/CourseCard";
 import { generateCourseCounterHtml } from "./components/CourseCounter";
+import { generateCourseFormHtml, setupCourseFormListener } from "./components/CourseEnrollmentForm";
 
 const appContainer = document.getElementById("app");
 
@@ -11,7 +12,7 @@ async function renderApp() {
   appContainer.innerHTML = `
     <main class="container">
       <h1>Campus Virtual - Cursos</h1>
-      <p class="loading-message">⏳ Cargando listado de cursos...</p>
+      <p class="loading-message">Cargando listado de cursos...</p>
     </main>
   `;
 
@@ -21,12 +22,15 @@ async function renderApp() {
     appContainer.innerHTML = `
       <main class="container">
         <h1>Campus Virtual - Cursos</h1>
-         r${generateCourseCounterHtml(courses.length)}
+        ${generateCourseFormHtml(courses)}
+        ${generateCourseCounterHtml(courses.length)}
         <ul class="courses-list">
           ${courses.map((course) => generateCourseCardHtml(course)).join("")}
         </ul>
       </main>
     `;
+
+    setupCourseFormListener();
   } catch (error) {
     console.error("Error al obtener cursos:", error);
 
